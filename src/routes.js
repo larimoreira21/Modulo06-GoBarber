@@ -1,13 +1,8 @@
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
-import Main from './pages/Main';
-import User from './pages/User';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import 'react-native-gesture-handler';
 
-const Routes = createAppContainer(
-  createStackNavigator({
-    Main,
-    User
-  })
-);
+
+const Routes = createNativeStackNavigator();
+
 
 export default Routes;
